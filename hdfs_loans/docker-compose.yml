@@ -1,0 +1,21 @@
+services:
+    main:
+        image: p3-image
+        ports:
+        - "127.0.0.1:5000:5000"
+        volumes:
+        - "./nb:/notebooks"
+        - "./main.sh:/start.sh"
+
+    worker:
+    # TODO: create 2 replicas running the worker
+        image: p3-image
+        deploy:
+            replicas: 2
+        volumes:
+        - "./worker.sh:/start.sh"
+
+networks:
+    default:
+        name: cs544net
+        driver: bridge
