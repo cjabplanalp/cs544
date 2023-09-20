@@ -6,6 +6,8 @@ Class website: https://tyler.caraza-harter.com/cs544/s23/schedule.html
 
 All projects were ran from a Google Cloud VM, using Ubuntu 22.04 LTS.
 
+PARTNER: [tjbuck11](https://github.com/tjbuck11)
+
 ### Software Used & Versions:
 
 * Docker 20.10
